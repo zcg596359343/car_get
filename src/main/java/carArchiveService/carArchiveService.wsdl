@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="CarArchiveServiceImplService" targetNamespace="http://impl.car.service.oa.htsoft.com/" xmlns:ns1="http://car.service.oa.htsoft.com/" xmlns:ns2="http://cxf.apache.org/bindings/xformat" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://impl.car.service.oa.htsoft.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:import location="http://192.168.7.8:80/jofficesrc/webservice/carArchiveService?wsdl=CarArchiveService.wsdl" namespace="http://car.service.oa.htsoft.com/">
+    </wsdl:import>
+  <wsdl:binding name="CarArchiveServiceImplServiceSoapBinding" type="ns1:CarArchiveService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="listAll">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="listAll">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="listAllResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="listPageAll">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="listPageAll">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="listPageAllResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getByCarnumber">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getByCarnumber">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getByCarnumberResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCarArchiveByEquips">
+      <soap:operation soapAction="" style="document" />
+      <wsdl:input name="getCarArchiveByEquips">
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getCarArchiveByEquipsResponse">
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CarArchiveServiceImplService">
+    <wsdl:port binding="tns:CarArchiveServiceImplServiceSoapBinding" name="CarArchiveServiceImplPort">
+      <soap:address location="http://192.168.7.8:80/jofficesrc/webservice/carArchiveService" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

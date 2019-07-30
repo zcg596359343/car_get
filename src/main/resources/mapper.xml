@@ -1,0 +1,9 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.dao.CarDao">
+    <insert id="get"  parameterType="com.entity.Car">
+     replace into car(annualInspection,buyprice,buytime,carmeter,carnumber,costpertask,descs,displacement,enginenumber,equips,framenumber,fuel,fueleconomy,id,initmileage,insurance,memo1,memo2,memo3,mileage,modify,names,newCAi,newInsurance,oils,orgId,orgPath,owner,ownername,persons,registertime,runstatus,speed,status,statusname,tasknums,type,version,voltage,weight)
+      values (#{annualInspection},#{buyprice},#{buytime},#{carmeter},#{carnumber},#{costpertask},#{descs},#{displacement},#{enginenumber},#{equips},#{framenumber},#{fuel},#{fueleconomy},#{id},#{initmileage},#{insurance},#{memo1},#{memo2},#{memo3},#{mileage},#{modify},#{names},#{newCAi},#{newInsurance},#{oils},#{orgId},#{orgPath},#{owner},#{ownername},#{persons},#{registertime},#{runstatus},#{speed},#{status},#{statusname},#{tasknums},#{type},#{version},#{voltage},#{weight})
+</insert>
+</mapper>
